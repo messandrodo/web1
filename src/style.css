@@ -1,0 +1,450 @@
+
+body {
+    margin: -20px 0 0 0;
+    padding: 0;
+    background-image: linear-gradient(#BAB86C, #E6E5CA);
+
+}
+ .index blog:nth-child(1) img, .index intro:nth-child(1),  .info infopage:first-child h2{
+     grid-area: one;
+ }
+ .index blog:nth-child(2) p, .info infopage:nth-child(2){
+     grid-area: two;
+ }
+.info infopage:nth-child(3){
+    grid-area: three;
+}
+.info infopage:nth-child(4){
+    grid-area: four;
+}
+.info infopage:nth-child(5) img{
+    grid-area: five;
+}
+.info infopage:nth-child(6){
+    grid-area: six;
+}
+
+ /*-----------form------------------*/
+form {
+    padding: 0;
+    margin: 0 1rem;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 0.5rem;
+    margin: 0.25rem 0 .5rem 0;
+    border: 1px solid hsl(300, 1%, 19%);
+    border-radius: 2px;
+    background-color: hsl(180, 4%, 95%);
+}
+
+input[type=text], input[type=email], input[type=date], textarea {
+    width: calc(100% - 1rem);
+}
+
+input[type=submit] {
+    background-color: hsl(32, 23%, 76%);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    font-weight: 700;
+}
+
+input:focus, textarea:focus, select:focus {
+    outline-color: hsl(11, 69%, 75%);
+}
+
+/*------------footer----------------*/
+footer{
+    left:0;
+    bottom: 5px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-top: 2px solid black;
+    background-color: #E6E5CA;
+
+
+}
+/*-------------ipad/gsm-------------- */
+@media only screen and (max-width: 550px ){
+    nav{
+        width: 100%;
+
+        margin: 0 0 0 0;
+        background-color: #BAB86C;
+        float: left;
+        padding: 0;
+
+    }
+    nav ul {
+        list-style: none;
+        max-width: 599px;
+        margin: 0 auto;
+        padding: 0;
+    }
+    nav li {
+        margin-left: 0px;
+        padding-left: 0px;
+        border: 0px;
+        list-style: none;
+
+    }
+    nav li a{
+        display: block;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: 'Helvetica Neue', sans-serif;
+        color: white;
+        padding: 8px 15px;
+        border-bottom: 1px solid white;
+        text-align: center;
+    }
+    nav li:first-child a {
+    border-left: 1px solid #ccc; }
+    nav li a:hover {
+    color: #c00;
+    background-color: #fff; }
+    .logo{
+        color: #111;
+        font-family: 'Helvetica Neue', sans-serif;
+        font-size: 30px;
+        font-weight: bold;
+        letter-spacing: -1px;
+        line-height: 1;
+        text-align: center;
+    }
+    nav img{
+    opacity: 0.5;
+    width: 100%;
+    }
+    .picture{
+    position: relative;
+    text-align: center;
+    color: white;
+    }
+   .intro{
+       text-align: justify;
+       margin: 5%;
+
+   }
+   h2{
+       text-align: center;
+       border-bottom: 1px solid white;
+
+   }
+   .blog{
+       display: grid;
+       grid-template-rows:  auto;
+       grid-template-areas:
+               "one"
+               "two";
+       justify-self: auto;
+       text-align: justify;
+
+
+   }
+   .blog img{
+       margin-left: 5%;
+       margin-right: 5%;
+
+   }
+   .blog p{
+       margin: 5%;
+   }
+   .contacttekst{
+       margin: 5%
+   }
+
+    .row {
+        margin: 10%;
+        padding-right: 10px;
+        width: 75%
+    }
+    .leidingcontact{
+        padding: 0 4px;
+    }
+    .person{
+        margin: 10px;
+        border-radius: 20px;
+        background-color: #BAB86C;
+    }
+    .person img{
+        padding-left: 25%;
+        max-width: 120px;
+    }
+
+    .person h3{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: "Gill Sans MT";
+        text-align: center;
+    }
+    .person p{
+        margin:5%;
+        text-align: justify;
+    }
+    main{
+
+        margin-left: 2.5%;
+        margin-right: 2.5%;
+        background-color: beige;
+        border-right: 5px solid white;
+        border-left: 5px solid white;
+
+    }
+    .infopage{
+        text-align: justify;
+        grid-template-rows:  auto;
+        grid-column-gap: 5%;
+
+        padding: 5%;
+    }
+    iframe{
+        width: 80%;
+        height:200px;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+
+    }
+    h4{
+        text-align: center;
+    }
+}
+
+
+
+/*------------Dekstop---------------*/
+@media only screen and (min-width: 551px) {
+
+/*------------navigatie-------------*/
+nav {
+    width: 100%;
+    float: left;
+    margin: 0 0 1em 0;
+    padding: 0;
+    background-color: #BAB86C;
+    border-bottom: 1px solid #ccc;
+    }
+nav ul {
+    list-style: none;
+    width: 800px;
+    margin: 0 auto;
+    padding: 0; }
+nav li {
+    float: left;
+    display: inline-flex;
+    width: 100%
+}
+nav li a {
+    display: block;
+    padding: 8px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Papyrus;
+    color: white;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid white;
+    text-align: center}
+
+nav li:first-child a {
+    border-left: 1px solid #ccc; }
+nav li a:hover {
+    color: #c00;
+    background-color: #fff; }
+nav h1{
+    text-align: center;
+}
+nav img{
+    opacity: 0.5;
+    width: 100%;
+}
+.picture{
+    position: relative;
+    text-align: center;
+    color: white;
+
+}
+
+.logo{
+    position: absolute;
+    top: 10%;
+    left: 1%;
+    background-image: linear-gradient(#BAB86C, black);
+    color: lightgrey;
+    font-size: 3vw;
+    border-radius: 10px;
+    font-family: Papyrus;
+
+}
+/*------------article----------------*/
+main{
+
+    margin-left: 10%;
+    margin-right: 10%;
+    background-color: beige;
+    border-right: 5px solid white;
+    border-left: 5px solid white;
+
+}
+
+
+article .blog{
+    column-count: 2;
+}
+h2{
+    font-family: "Gill Sans MT" ;
+    border-bottom: 2px solid;
+    border-image: linear-gradient(to right, black, transparent) 1;
+    text-align: center;
+}
+
+    nav {
+        width: 100%;
+        float: left;
+        margin: 0 0 1em 0;
+        padding: 0;
+        background-color: #BAB86C;
+        border-bottom: 1px solid #ccc;
+    }
+
+    nav ul {
+        list-style: none;
+        width: 400px;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    nav li {
+        float: left;
+        display: flow;
+        width: 100%
+    }
+
+    nav li a {
+        display: block;
+        padding: 8px 15px;
+        text-decoration: none;
+        font-weight: bold;
+        font-family: Papyrus;
+        color: white;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid white;
+        text-align: center
+    }
+
+    nav li:first-child a {
+        border-left: 1px solid #ccc;
+    }
+
+    nav li a:hover {
+        color: #c00;
+        background-color: #fff;
+    }
+
+    nav h1 {
+        text-align: center;
+    }
+
+    nav img {
+        opacity: 0.5;
+        width: 100%;
+    }
+
+    .picture {
+        position: relative;
+        text-align: center;
+        color: white;
+
+    }
+
+    .logo {
+        position: absolute;
+        top: 30%;
+        left: 1%;
+        background-image: linear-gradient(#BAB86C, black);
+        color: lightgrey;
+        font-size: 3vw;
+        border-radius: 10px;
+        font-family: Papyrus;
+
+    }
+    .intro{
+        display: grid;
+        grid-auto-rows: auto;
+        grid-auto-columns: auto;
+        grid-column-gap: 5%;
+        grid-template-areas:
+                "one one";
+        justify-items: center;
+        margin: 2%;
+
+
+    }
+    .blog{
+        display: grid;
+        grid-template-rows:  auto;
+        grid-column-gap: 5%;
+        grid-auto-columns: auto;
+        grid-template-areas:
+               "one two";
+        padding: 2%;
+
+
+    }
+    .contacttekst{
+        padding: 2%;
+    }
+    .row {
+        flex:33%;
+        max-width: 33%;
+        padding-right: 10px;
+    }
+    .row img{
+        width: 100%;
+    }
+    .leidingcontact{
+        display: flex;
+        padding: 0 4px;
+
+    }
+    .person{
+        margin: 10px;
+        background-color: #BAB86C;
+        border-radius: 10px;
+
+    }
+    .person h3{
+        margin-top: 0;
+        margin-bottom: 0;
+        font-family: "Gill Sans MT";
+        text-align: center;
+    }
+    .person p{
+        margin: 5%;
+
+    }
+    .infopage{
+        text-align: justify;
+        grid-template-rows:  auto;
+        grid-column-gap: 5%;
+
+        padding: 2%;
+
+    }
+    iframe{
+        width: 80%;
+        height: 300px;
+        margin-left: 12.5%;
+        margin-right: 12.5%;
+
+    }
+    h4{
+        text-align: center;
+    }
+
+}
